@@ -14,7 +14,7 @@ I found [a Github help tutorial](https://help.github.com/articles/setting-up-you
 
 The Jekyll site looks and feels like a CMS. Posts are kept in a folder named `_posts`, and the main structure of the site appears to be contained within various files in another folder at the root of the project called `_site`.
 
-What's really nice is that these pages are very small when served up. This page, for instance, loads in less than half of a second. Compared to a larger CMS, which may have many more features than I will every need, Jekyll appears to offer a nice balance of customization options, simplicity, and performance.
+What's really nice is that these pages are very small when served up. This page, for instance, loads in less than half of a second. Compared to a larger CMS, which may have many more features than I will ever need, Jekyll appears to offer a nice balance of customization options, simplicity, and performance.
 
 Additionally, Jekyll uses Markdown syntax so if you have written a README before, you should feel at home writing posts.
 
