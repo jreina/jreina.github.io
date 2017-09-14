@@ -6,7 +6,7 @@ categories: programming functional
 description: "Pretty sweet."
 published: true
 ---
-This might sound a bit outlandish or ridiculous, but I seldom write loops nowadays. What I have found is that just about every Turing-complete programming language includes a set of methods, or applicable functions that can replace just about every loop that I was previously writing. These [higher-order functions](https://github.com/hemanth/functional-programming-jargon#higher-order-functions-hof) are called map, filter, and foldl.
+This might sound a bit outlandish or ridiculous, but I seldom write loops nowadays. What I have found is that just about every programming language includes a set of methods, or applicable functions that can replace just about every loop that I was previously writing. These [higher-order functions](https://github.com/hemanth/functional-programming-jargon#higher-order-functions-hof) are called map, filter, and fold.
 
 ## Map
 
@@ -16,23 +16,23 @@ The `map` function takes a function you provide and iterates over each item in y
 We'll start off with some easy examples:
 <script src="https://gist.github.com/jreina/536f1f5683d33e3ae6c6bc138987113c.js"></script>
 
-That didn't hurt too much, did it? In the first `map`, we essentially applied `f(x) = 2x` to each element in the sequence. Likewise, the second `map` applied `f(x) = x²` to each element. Easy cheesey.  
+That didn't hurt too much, did it? In the first `map`, we essentially applied `f(x) = 2x` to each element in the sequence. Likewise, the second `map` applied `f(x) = x²` to each element. Easy cheesy.  
 
 ### Learning to crawl
 Here's an example of mapping over an array of objects:
 <script src="https://gist.github.com/jreina/1dd766fc0bb99dedae6735448199dd2f.js"></script>
 
-In the first `map` we are pulling out each person's name, their age in the second `map`, and their second hobby in the third `map`. If what is happening here isn't immediately apparent to you, here is an the same thing in an imperative style:
+In the first `map` we are pulling out each person's name, their age in the second `map`, and their second hobby in the third `map`. If what is happening here isn't immediately apparent to you, here is the same thing in an imperative style:
 <script src="https://gist.github.com/jreina/3e863b25bf9087284fa0ae09c4171f49.js"></script>
 
 Crazy, right? What we can do with a single expression with `map`, takes FOUR lines with imperative code. Oh, and did you notice the fact that we did not mutate the value of the original array in the imperative example? This is also true for `map`, which is important since we might need to do other things to that original array. 
 
 ### Up and running!
-Alright, "this is childs play", you say. Where are we REALLY gonna use `map`? Well, buckle up! Check out this real world example:
+Alright, "this is child's play", you say. Where are we REALLY gonna use `map`? Well, buckle up! Check out this real world example:
 <script src="https://gist.github.com/jreina/3d20b073b95fffae0b5efc3f6d95ac9e.js"></script>
 This example is straight outta [polysvg](https://github.com/jreina/polysvg), albeit cut down a bit for brevity. This `map` chain takes an array of six zeroes and performs the following steps:  
 1. Numbers each spot according to its index
-2. Multiplies each position by 60 to get the angles of each vertice from the centroid of a hexagon
+2. Multiplies each position by 60 to get the angles of each vertex from the centroid of a hexagon
 3. Converts each angle to radians
 4. Converts from polar to Cartesian coordinates
 5. Rounds these nasty floats
@@ -40,7 +40,7 @@ This example is straight outta [polysvg](https://github.com/jreina/polysvg), alb
 
 [Without annotations, this is about nineteen lines of code.](https://github.com/jreina/polysvg/blob/master/n-gon.js). Most importantly, it works and you can [try it out yourself](http://polysvg.johnnyreina.com/).
 
-### When should I use map?
+### When should I use `map`?
 Since `map` has a 1:1 relationship between the number of things you put in and the number of things you get out, you should use `map` when you want to _transform_ `x` amount of things into `x` amount of other things. If you need to turn `x` amount of things into `x - 5` amount of things, `map` might not be the ideal solution right away. You may need to segregate your things into subsets, and then `map` each subset separately.
 
 ### JavaScript is the worst! What other languages have `map`?
