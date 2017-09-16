@@ -49,7 +49,7 @@ Like, all the good ones. Though the names might be a bit different. In an effort
 | Language | Function/Method |
 | --- | :---: |
 | JavaScript | Array.prototype.map |
-| C# | IEnumerable.Where<T> (as part of System.Linq) |
+| C# | IEnumerable.Select<T> (as part of System.Linq) |
 | Python | map |
 | Haskell | map |
 | PHP | array_map |
