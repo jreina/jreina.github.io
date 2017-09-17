@@ -28,11 +28,14 @@ This is pretty cool, eh? It may take some staring at for the concept to fall int
 ## We added some numbers. Big whoop. Why are you so excited about fold?
 I consider fold to be the end-all-be-all iterative function. The bee's knees, if you will. The reason I say that is because the seed value can be **of any type**. That means we can fold over an array and kick out an object, array, number, string, boolean, or whatever your heart desires! Say we have an array of pairs that we want to transpose onto an object, this is easily done with fold:
 <script src="https://gist.github.com/jreina/e7dc2e4bf58a549bd19ea572fc7fffc9.js"></script>
-The first fold transposes the pairs onto a new object. The second fold, which acts on the new `person` object, pulls those pairs back out. This proves that we did not lose any information during the process. Additionally, folding does not mutate the original array. This is important because we might want to perform some additional transformations on that array after we fold over it.
+The first fold transposes the pairs onto a new object. The second fold, which acts on the new `person` object, pulls those pairs back out. This proves that we did not lose any information during the process.
 
 The other two iterative functions that I've covered, map and filter, can easily be implemented as a function of fold! Consider the following:
 <script src="https://gist.github.com/jreina/ece788b9f8daf8b5a8679a3dd0b34eb4.js"></script>
-Implementing map and filter as a function of fold are a little bit verbose, due to the fact that map and filter are purpose-built. But, this example clearly shows the relationship between all three functions and thus why I lump these functions into the same bag.
+Implementing map and filter as a function of fold are a little bit verbose, due to the fact that map and filter are purpose-built. But, this example clearly shows the relationship between all three functions and thus why I lump these functions into the same bag.  
+
+Here's an example of fold being used to flatten an array of objects into a big chunk of CSV text:
+<script src="https://gist.github.com/jreina/ec56a5f777bae180d77bd9ad14878524.js"></script>
 
 ## Holy shit! This is amazing!
 I know, right!? I cannot stress enough how powerful this array transform is.
@@ -41,3 +44,17 @@ I know, right!? I cannot stress enough how powerful this array transform is.
 Due to the flexible nature of fold, it's rather difficult and limiting to say "definitely use it in *scenario a* or *scenario b*." Basically, when you want to accumulate the items of a collection in some way, fold is a great tool for doing so.  
 
 Just as map and filter avoid mutating the original array, so does fold. This is important because we want to transform the list with fold, but we might also want to map and filter afterward. This idea of avoiding mutating data goes a bit beyond the scope of this article but I think Eric Normand did a great job of explaining [why you might want to treat data as unchangeable](https://dev.to/ericnormand/immutable-paper).
+
+## Which languages have fold?
+The ones I use day-to-day have fold. Here's a table of the ones I know about:
+
+| Language | Function/Method |
+| --- | :---: |
+| JavaScript | Array.prototype.reduce |
+| C# | Enumerable.Aggregate<TSource, TAccumulate> (as part of System.Linq) |
+| Haskell | foldl, foldl1 |
+| PHP | array_reduce |
+| MongoDB | $reduce (as part of an aggregation pipeline) |
+
+<br />
+There are definitely more languages with the fold function baked in, so be sure to check your local listings.
