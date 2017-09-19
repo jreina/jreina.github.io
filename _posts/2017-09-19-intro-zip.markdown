@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "Intro to the zip function"
+date:   2017-09-19 08:00:00 -0500
+categories: programming functional
+description: "If you liked map, filter and fold, you'll love zip!"
+published: true
+---
+Now that we have covered the fundamental iterative functions, I want to take some time to look at some more functions that you will typically find lurking in functional-first programming languages or functional utility libraries. While not as prevalent as map, filter, and fold, these functions have their use cases and though they can be easily implemented by way of fold, they are more purpose built so you will find the syntax to be tidier.
+
+The first of these functions I want to talk about is the convolution function, more widely known as zip. In Haskell, the zip function has a type signature of `zip :: [a] -> [b] -> [(a, b)]`. What this means is that the zip function accepts two lists, and combines them into a single list by merging each value of each list. Traditionally, zip outputs a tuple (the `(a, b)` part of the type signature), however, since JavaScript doesn't have tuples (nor a zip function) we will use a two-value array to represent pairs and we will define the zip function ourselves.
+
+We'll start off by defining zip as a function of map.
+<script src="https://gist.github.com/jreina/1026c28a5065aced3765d5270c61fc00.js"></script>
+Note that this is not a battle-proven production-ready solution. This is just to get us going without worrying about external libraries. I would recommend looking into [Underscore.js](http://underscorejs.org/), [Lodash](https://lodash.com/), or [Ramda](http://ramdajs.com/) for tested and well-designed implementations of zip. In the wild, zip will usually only map over the shortest length array so that your output array isn't longer than the shortest input array.
+
+So what can we do with this? As usual, we'll start off with a very basic example.
+<script src="https://gist.github.com/jreina/e2117ed8972a0bbc887bd30c8d64de55.js"></script>
+And just like that, we've constructed the discrete sequence of values for <code>f(x) = x<sup>2</sup></code> where `{ 0 <= x <= 10 }`. Pretty cool, eh? Now we can send that off to Chart.js or the like and get back a nice chart.
+
+Because of the flexible type signature (read: non-existent) of our zip implementation, the return value can be an array of anything. It's an array by default, but in the second zip above we constructed some objects from our pairs. If you made it through map and fold, this should make sense to you right away (because you are a higher-order programmer now!), but I will show this same example done in an imperative style just in case.
+<script src="https://gist.github.com/jreina/a7bae0e8bfe5c1e32f72b8eadaf0dba4.js"></script>
+
+As long as you know your two arrays match up one-to-one, you can use zip to compose objects of sublists into incrementally larger objects. Though there are varying opinions on the subject, I tend to prefer composing objects rather than inheriting and I think MPJ at Fun Fun Function [makes a solid case for this idea](https://www.youtube.com/watch?v=wfMtDGfHWpA) as well. So how would we do this with zip? Well lets take our previous example where we took our x-values and y-values and combined them into an object, and lets take these boring 2-dimensional points and turn them into boring 3-dimensional points. We'll then consider these points to represent the directed endpoints of 3-dimensional vectors from the origin and calculate their magnitude.
+<script src="https://gist.github.com/jreina/09d6f3ffbd377b81b96f59d0e534c7a5.js"></script>
+
+Zip gives us a concise syntax for doing a good chunk of work. What if we want to take a list of two vectors and calculate their dot product and resultant vector?
+<script src="https://gist.github.com/jreina/12997d53820ee3ff49d1c24cc52ba5f0.js"></script>
+Very easy. Note that since I'm such a smart guy I accidentally made the original arrays have more even-indexed members than odd, that's why I passed in the odds first. This is an example of something a _good_ implementation of zip would do automatically. If I were to have passed the evens in as the first argument, we would have gotten an error since we are accessing the items in the second array by index.
+
+## Where should I use zip?
+When you want to combine two or more lists with a one-to-one correspondence. Note that since zip combines things in some way, the result of consecutive zips usually ends in progressively larger, more complex items. Also, like all of the iterative functions I've covered so far, zip does not mutate the original arrays. This means that you can put some stuff in an array, zip it, and the original stuff will still be there untouched.
+
+## Which languages have zip?
+The language you use probably has it so by sure to check the owner's manual. As far as I know, the following languages and libraries have zip:
+
+| Language | Function | Note |
+| -- | -- | -- |
+| C# | Enumerable.Zip |  |
+| Haskell | zip |  |
+| JavaScript (Underscore.js) | [_.zip](http://underscorejs.org/#zip) | Be sure to check the docs on this.<br />This implementation doesn't appear to accept a "zipping" function |
+| JavaScript (lodash) | [_.zip](https://lodash.com/docs/4.17.4#zip) | Be sure to check the docs on this.<br />This implementation doesn't appear to accept a "zipping" function |
+| JavaScript (lodash) | [_.zipWith](https://lodash.com/docs/4.17.4#zipWith) |  |
+| JavaScript (Ramda) | [R.zip](http://ramdajs.com/docs/#zip) | Be sure to check the docs on this.<br />This implementation doesn't appear to accept a "zipping" function |
+| JavaScript (Ramda) | [R.zipWith](http://ramdajs.com/docs/#zipWith) |  |
+| JavaScript (Immutable) | [zip](https://facebook.github.io/immutable-js/docs/#/List/zip) | Be sure to check the docs on this.<br />This implementation doesn't appear to accept a "zipping" function |
+| JavaScript (Immutable) | [zipWith](https://facebook.github.io/immutable-js/docs/#/List/zipWith) |  |
+| Python | zip |  Be sure to check the docs on this.<br />This implementation doesn't appear to accept a "zipping" function |
