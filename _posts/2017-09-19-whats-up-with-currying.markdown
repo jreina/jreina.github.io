@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "What's up with currying?"
-date:   2017-09-19 08:00:00 -0500
+date:   2017-09-21 04:00:00 -0500
 categories: programming functional
-description: ""
+description: "Hard to get enough of, but not for everyone."
 published: true
 ---
 If you've been exposed to functional programming, you have almost certainly come across the concept of curried functions. Named after the man himself, [Haskell B. Curry](https://en.wikipedia.org/wiki/Haskell_Curry), a curried function is one that requires multiple arguments but cannot accept all of them in a single call. Consider the following example:
