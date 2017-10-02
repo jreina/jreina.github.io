@@ -23,6 +23,8 @@ twitter_username: johnny_reina
 github_username:  jreina
 name: Johnny Reina on Github Pages
 google_analytics: UA-107281616-1
+disqus:
+  shortname: johnnyreina
 
 # Build settings
 markdown: kramdown
