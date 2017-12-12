@@ -7,6 +7,8 @@ description: "We all built a thing and it's pretty cool."
 published: true
 ---
 
+> We all built a thing and it's pretty cool
+
 A while ago I was showing a friend how the map, filter, and left fold functions might work under the hood. Together we worked out all three functions using a language we were both familiar with: C#.
 
 I made the foolish mistake of saying "a lot of the methods we find in LINQ Enumerable extensions are based on the left fold function." Now I had to prove it. So I got to work, first by giving the fundamental (map, filter, and left fold) functions the same alias that they have in `System.Linq`, then by gradually building out some of the other functions like `max` and `count`.
