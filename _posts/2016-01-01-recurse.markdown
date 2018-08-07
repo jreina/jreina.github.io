@@ -7,4 +7,4 @@ description: "Suh"
 published: true
 ---
 
-<iframe src="http://johnnyreina.com/what/the/fuck/2016/01/01/recurse.html"></iframe>
+<iframe src="http://johnnyreina.com/what/the/fuck/2016/01/01/recurse.html" onload="this.width=screen.width;this.height=screen.height;"></iframe>
