@@ -51,7 +51,7 @@ This function accepts a lens, a value, and then an object, and returns a copy of
 ### `over`
 This function accepts a lens, a transform function, and then an object, and returns a copy of the object with the focused property set to the original value of the focused property \*after\* passing it through the provided transform function. This operator is a little harder to understand. This function is just like the `map` function since it runs a function \*over\* the focused value.
 
-## Additional reading
+## Additional reading 
  - [Haskell Lens package wiki](https://github.com/ekmett/lens/wiki)
  - [History of Lenses (from same wiki as above)](https://github.com/ekmett/lens/wiki/History-of-Lenses)
  - [Ramda Docs - lens](https://ramdajs.com/docs/#lens)
