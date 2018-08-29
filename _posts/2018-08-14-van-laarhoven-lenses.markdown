@@ -4,7 +4,7 @@ title:  "What [I think] I know about van Laarhoven lenses"
 date:   2018-08-14 16:20:00 -0500
 categories: programming functional
 description: "Composable magic"
-published: true
+published: false
 ---
 
 ## Mo' functions, mo' problems
