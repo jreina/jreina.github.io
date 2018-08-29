@@ -1,0 +1,44 @@
+[
+  {
+    "name": "SVG Polygon Generator",
+    "repo_url": "https://github.com/jreina/polysvg",
+    "language": "JavaScript",
+    "url": "http://polysvg.johnnyreina.com/"
+  },
+  {
+    "name": "Cellular automata generator",
+    "repo_url": "https://github.com/jreina/cellular-automata",
+    "language": "JavaScript",
+    "url": "http://ca.johnnyreina.com/"
+  },
+  {
+    "name": "Days since a loop has been written by...",
+    "repo_url": "https://github.com/jreina/days-since-a-loop-has-been-written-by",
+    "language": "JavaScript",
+    "url": "http://dayssincealoophasbeenwrittenby.johnnyreina.com/"
+  },
+  {
+    "name": "Mandelbrot set",
+    "repo_url": "https://github.com/jreina/mandelbrot-and-friends",
+    "language": "JavaScript",
+    "url": "http://johnnyreina.com/mandelbrot-and-friends/mandelbrot"
+  },
+  {
+    "name": "Really bad snow animation",
+    "repo_url": "https://github.com/jreina/really-bad-snow-animation",
+    "language": "JavaScript",
+    "url": "http://johnnyreina.com/really-bad-snow-animation/"
+  },
+  {
+    "name": "Easy web attacks",
+    "repo_url": "https://github.com/jreina/easy-web-attacks",
+    "language": "JavaScript",
+    "url": "http://johnnyreina.com/easy-web-attacks/reverse-tabnabbing/good-page.html"
+  },
+  {
+    "name": "Reactorito",
+    "repo_url": "https://github.com/jreina/reactorito",
+    "language": "JavaScript",
+    "url": "http://reactorito.johnnyreina.com/"
+  }
+]

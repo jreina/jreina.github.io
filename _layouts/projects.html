@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<style>
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #212529;
+    color: #fff;
+    font-weight: 400;
+  }
+  .table tr:nth-last-of-type(odd) {
+    background-color: rgba(255,255,255,.05);;
+  }
+  .table tr:hover {
+    background-color: rgba(255,255,255,.075);
+  }
+  .table td {
+    padding: .75rem;
+  }
+  .table a {
+    color: #fff;
+  }
+  .language-indicator {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .language-indicator.javascript {
+    background-color: #f1e05a;
+  }
+</style>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Projects</h1>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+      <table class="table">
+        {% for project in site.data.projects %}
+          <tr>
+            <td>{{project.name}}</td>
+            <td><a href="{{project.repo_url}}" rel="noopener noreferrer" target="_blank">Repository</a></a></td>
+            <td><a href="{{project.url}}" rel="noopener noreferrer" target="_blank">Demo</a></a></td>
+            <td class="language-cell"><span class="language-indicator {{project.language | downcase}}"></span>{{project.language}}</td>
+          </tr>
+        {% endfor %}
+    </table>
+  </div>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
