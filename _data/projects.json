@@ -3,42 +3,160 @@
     "name": "SVG Polygon Generator",
     "repo_url": "https://github.com/jreina/polysvg",
     "language": "JavaScript",
-    "url": "http://polysvg.johnnyreina.com/"
+    "languageCode": "js",
+    "url": "http://polysvg.johnnyreina.com/",
+    "desc": "Generate SVG elements for n-sided regular polygons."
   },
   {
     "name": "Cellular automata generator",
     "repo_url": "https://github.com/jreina/cellular-automata",
     "language": "JavaScript",
-    "url": "http://ca.johnnyreina.com/"
+    "languageCode": "js",
+    "url": "http://ca.johnnyreina.com/",
+    "desc": "Generate cellular automata in your browser!"
+  },
+  {
+    "name": "mk-icons-vs-code",
+    "repo_url": "https://github.com/jreina/mk-icons-vs-code",
+    "language": "N/A",
+    "languageCode": "na",
+    "url": "https://marketplace.visualstudio.com/items?itemName=JohnnyReina.MK",
+    "desc": "Mortal Kombat icons for Visual Studio Code."
+  },
+  {
+    "name": "Merriman",
+    "repo_url": "https://github.com/jreina/merriman",
+    "language": "TypeScript",
+    "languageCode": "ts",
+    "url": "https://www.npmjs.com/package/merriman",
+    "desc": "Media server running on Node. Uses TypeScript and React w/ JSX."
+  },
+  {
+    "name": "marie-kondo",
+    "repo_url": "https://github.com/jreina/marie-kondo",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://www.npmjs.com/package/marie-kondo",
+    "desc": "A very dangerous CLI app which recursively deletes random files from a given directory."
+  },
+  {
+    "name": "JSON DB",
+    "repo_url": "https://github.com/jreina/json-db",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://github.com/jreina/json-db",
+    "desc": "A repo I use to teach some of the base Node modules such as path and fs as well as basic API design considerations."
+  },
+  {
+    "name": "eulers-method-hs",
+    "repo_url": "https://github.com/jreina/eulers-method-hs",
+    "language": "Haskell",
+    "languageCode": "hs",
+    "url": "https://github.com/jreina/eulers-method-hs",
+    "desc": "An implementation of Euler's method for approximating the point-set solution of an ordinary first-order differential equation."
+  },
+  {
+    "name": "eulers-method",
+    "repo_url": "https://github.com/jreina/eulers-method",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://github.com/jreina/eulers-method",
+    "desc": "Same as eulers-method-hs above except written in JavaScript."
+  },
+  {
+    "name": "Impractical Fizzbuzz Solutions",
+    "repo_url": "https://github.com/jreina/impractical-fizzbuzz-solutions",
+    "language": "Many",
+    "languageCode": "many",
+    "url": "https://github.com/jreina/impractical-fizzbuzz-solutions",
+    "desc": "A project created purely to help with first-time open source contributors. An interesting repo to look at when considering how people approach problem solving."
+  },
+  {
+    "name": "Linked List",
+    "repo_url": "https://github.com/jreina/linked-list",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://github.com/jreina/linked-list",
+    "desc": "Yet another implementation of the linked list data structure. Used to help teach the linked list structure."
+  },
+  {
+    "name": "New C# Features",
+    "repo_url": "https://github.com/jreina/new-csharp-features",
+    "language": "C#",
+    "languageCode": "csharp",
+    "url": "https://github.com/jreina/new-csharp-features",
+    "desc": "A bunch of examples of newer (7.0+) C# features. Used to show newer features to teammates during team meetings/learning sessions."
+  },
+  {
+    "name": "ShittyLINQ",
+    "repo_url": "https://github.com/shittylibs/ShittyLINQ",
+    "language": "C#",
+    "languageCode": "csharp",
+    "url": "https://www.nuget.org/packages/ShittyLINQ/",
+    "desc": "Extension methods for IEnumerable based on System.Linq in the .NET framework. Created to help first-time open source contributors make their first contributions during Hacktoberfest."
+  },
+  {
+    "name": "ShittyLINQ.js",
+    "repo_url": "https://github.com/shittylibs/ShittyLINQ.js",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://www.npmjs.com/package/shittylinq",
+    "desc": "Methods for Array.prototype based on System.Linq in the .NET framework. Despite the goofy name, this library has near-complete parity with System.Linq! Created to help first-time open source contributors make their first contributions during Hacktoberfest."
+  },
+  {
+    "name": "number-partition",
+    "repo_url": "https://github.com/jreina/number-partition",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://www.npmjs.com/package/number-partition",
+    "desc": "Partition a number into an array of smaller numbers which sum to the original number."
+  },
+  {
+    "name": "fish-operator",
+    "repo_url": "https://github.com/jreina/fish",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://www.npmjs.com/package/fish-operator",
+    "desc": "The fish operators for composing Kleisli arrows. Resembles the (>=>) and (<=<) operators from Haskell."
   },
   {
     "name": "Days since a loop has been written by...",
     "repo_url": "https://github.com/jreina/days-since-a-loop-has-been-written-by",
     "language": "JavaScript",
-    "url": "http://dayssincealoophasbeenwrittenby.johnnyreina.com/"
+    "languageCode": "js",
+    "url": "http://dayssincealoophasbeenwrittenby.johnnyreina.com/",
+    "desc": "How many days has it been since I've written a loop?"
   },
   {
     "name": "Mandelbrot set",
     "repo_url": "https://github.com/jreina/mandelbrot-and-friends",
     "language": "JavaScript",
-    "url": "http://johnnyreina.com/mandelbrot-and-friends/mandelbrot"
+    "languageCode": "js",
+    "url": "http://johnnyreina.com/mandelbrot-and-friends/mandelbrot",
+    "desc": "Basic implementation of the Mandelbrot set."
   },
   {
     "name": "Really bad snow animation",
     "repo_url": "https://github.com/jreina/really-bad-snow-animation",
     "language": "JavaScript",
-    "url": "http://johnnyreina.com/really-bad-snow-animation/"
-  },
-  {
-    "name": "Easy web attacks",
-    "repo_url": "https://github.com/jreina/easy-web-attacks",
-    "language": "JavaScript",
-    "url": "http://johnnyreina.com/easy-web-attacks/reverse-tabnabbing/good-page.html"
+    "languageCode": "js",
+    "url": "http://johnnyreina.com/really-bad-snow-animation/",
+    "desc": "Just a really bad snow animation."
   },
   {
     "name": "Reactorito",
     "repo_url": "https://github.com/jreina/reactorito",
     "language": "JavaScript",
-    "url": "http://reactorito.johnnyreina.com/"
+    "languageCode": "js",
+    "url": "http://reactorito.johnnyreina.com/",
+    "desc": "A basic example of a React app for a short talk given at a company meeting."
+  },
+  {
+    "name": "ridiculous-moon-event",
+    "repo_url": "https://github.com/jreina/ridiculous-moon-event",
+    "language": "JavaScript",
+    "languageCode": "js",
+    "url": "https://www.npmjs.com/package/ridiculous-moon-event",
+    "desc": "Generate a ridiculous name for an otherwise ordinary moon."
   }
 ]
