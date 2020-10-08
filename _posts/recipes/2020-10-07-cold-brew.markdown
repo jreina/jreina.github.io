@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Recipe: Cold brew coffee"
+date:   2020-10-07 16:01:00 -0500
+categories: recipes coffee
+description: "Easy to make and convenient"
+published: true
+---
+
+## Ingredients
+- 270g of coffee
+- 1 gallon of water
+- Gallon jar
+- Filters, I use Chemex filters
+
+## Instructions
+1. Grind coffee coursely
+1. Add coffee to jar
+1. Fill up jar with water, gently mix grounds
+1. Let sit at room temp for 12-16 hours
+1. Decant and optionally filter liquid from jar
+1. Enjoy
+
+## Notes
+I made this recipe at 1 gallon so it can be easily scaled up or down.
