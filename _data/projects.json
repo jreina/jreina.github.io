@@ -1,5 +1,42 @@
 [
   {
+    "name": "Lubbock COVID Notebook",
+    "repo_url": "https://github.com/jreina/lubbock-covid",
+    "desc": "Examining and tracking the COVID rates in my city.",
+    "language": "R",
+    "languageCode": "r",
+    "url": "https://covid.johnnyreina.com/"
+  },
+  {
+    "name": "AJV types",
+    "repo_url": "https://github.com/jreina/ajv-types",
+    "desc": "Types and factory functions for building AJV validation schemas",
+    "language": "TypeScript",
+    "languageCode": "ts",
+    "url": "https://www.npmjs.com/package/@johnny.reina/ajv-types"
+  },
+  {
+    "name": "Redis Objects",
+    "repo_url": "https://github.com/jreina/redis-objects",
+    "desc": "Redis library that handles structures as local objects",
+    "language": "TypeScript",
+    "languageCode": "ts"
+  },
+  {
+    "name": "Abstrakt",
+    "repo_url": "https://github.com/jreina/abstrakt",
+    "desc": "Abstrakt time-tracking project",
+    "language": "TypeScript/TSX",
+    "languageCode": "ts"
+  },
+  {
+    "name": "DangerLINQ",
+    "repo_url": "https://github.com/ShittyLabs/DangerLinq",
+    "desc": "Linq in TypeScript, but every function is compiled from a Github Gist on the fly.",
+    "language": "TypeScript",
+    "languageCode": "ts"
+  },
+  {
     "name": "SVG Polygon Generator",
     "repo_url": "https://github.com/jreina/polysvg",
     "language": "JavaScript",
@@ -126,30 +163,6 @@
     "languageCode": "js",
     "url": "http://dayssincealoophasbeenwrittenby.johnnyreina.com/",
     "desc": "How many days has it been since I've written a loop?"
-  },
-  {
-    "name": "Mandelbrot set",
-    "repo_url": "https://github.com/jreina/mandelbrot-and-friends",
-    "language": "JavaScript",
-    "languageCode": "js",
-    "url": "http://johnnyreina.com/mandelbrot-and-friends/mandelbrot",
-    "desc": "Basic implementation of the Mandelbrot set."
-  },
-  {
-    "name": "Really bad snow animation",
-    "repo_url": "https://github.com/jreina/really-bad-snow-animation",
-    "language": "JavaScript",
-    "languageCode": "js",
-    "url": "http://johnnyreina.com/really-bad-snow-animation/",
-    "desc": "Just a really bad snow animation."
-  },
-  {
-    "name": "Reactorito",
-    "repo_url": "https://github.com/jreina/reactorito",
-    "language": "JavaScript",
-    "languageCode": "js",
-    "url": "http://reactorito.johnnyreina.com/",
-    "desc": "A basic example of a React app for a short talk given at a company meeting."
   },
   {
     "name": "ridiculous-moon-event",

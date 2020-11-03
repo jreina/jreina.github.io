@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <style>
   .wrapper {
     max-width: 1920px;
@@ -26,13 +27,13 @@ layout: default
     background-color: #212529;
   }
   table.table tr:nth-child(odd) {
-    background-color: rgba(255,255,255,.05);;
+    background-color: rgba(255, 255, 255, 0.05);
   }
   table.table tr:hover {
-    background-color: rgba(255,255,255,.075);
+    background-color: rgba(255, 255, 255, 0.075);
   }
   table.table td {
-    padding: .75rem;
+    padding: 0.75rem;
     border: none;
   }
   table.table a {
@@ -59,35 +60,63 @@ layout: default
   .language-indicator.hs {
     background-color: #5e5086;
   }
+  .language-indicator.r {
+    background-color: #198ce7;
+  }
   .language-indicator.many {
     background: linear-gradient(rgb(255, 0, 0), rgb(0, 255, 157));
   }
-  .gh-icon, .gh-icon-link {
+  .gh-icon,
+  .gh-icon-link {
     display: inline-block;
     width: 32px;
     height: 32px;
   }
 </style>
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Projects</h1>
-    <em>A non-exhaustive list of things I've built. My GitHub is sort of my junk drawer but it's <strong>my</strong> junk drawer. Most things are not immediately useful but I tend to build whatever is on my mind.</em>
+    <em
+      >A non-exhaustive list of things I've built. My GitHub is sort of my junk
+      drawer but it's <strong>my</strong> junk drawer. Most things are not
+      immediately useful but I tend to build whatever is on my mind.</em
+    >
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <div class="table-container">
       <table class="table">
         {% for project in site.data.projects %}
-          <tr>
-            <td><a href="{{project.url}}" rel="noopener noreferrer" target="_blank">{{project.name}}</a></td>
-            <td>{{project.desc}}</td>
-            <td><a href="{{project.repo_url}}" rel="noopener noreferrer" target="_blank" class="gh-icon-link"><img src="/public/gh-icon.png" class="gh-icon"/></a></td>
-            <td class="language-cell"><span class="language-indicator {{project.languageCode | downcase}}"></span></td>
-            <td>{{project.language}}</td>
-          </tr>
+        <tr>
+          <td>
+            <a href="{{project.url}}" rel="noopener noreferrer" target="_blank"
+              >{{project.name}}</a
+            >
+          </td>
+          <td>{{project.desc}}</td>
+          <td>
+            <a
+              href="{{project.repo_url}}"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="gh-icon-link"
+              ><img src="/public/gh-icon.png" class="gh-icon"
+            /></a>
+          </td>
+          <td class="language-cell">
+            <span
+              class="language-indicator {{project.languageCode | downcase}}"
+            ></span>
+          </td>
+          <td>{{project.language}}</td>
+        </tr>
         {% endfor %}
-    </table>
-  </div>
+      </table>
+    </div>
   </div>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
