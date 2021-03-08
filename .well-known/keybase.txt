@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/johnnyreina
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://johnnyreina.com
+  * I am johnnyreina (https://keybase.io/johnnyreina) on keybase.
+  * I have a public key with fingerprint C2A4 84D1 23F2 46DB 7E10  8D1E 0AE3 B93B 76AD 9E0E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014dadd526bdb904eb1eef2ad674e2771c88771de0c1073ad20f611e0a3d36f4c70a",
+      "fingerprint": "c2a484d123f246db7e108d1e0ae3b93b76ad9e0e",
+      "host": "keybase.io",
+      "key_id": "0ae3b93b76ad9e0e",
+      "kid": "01014dadd526bdb904eb1eef2ad674e2771c88771de0c1073ad20f611e0a3d36f4c70a",
+      "uid": "d0e11b57b067c209d73c99b56e0ff719",
+      "username": "johnnyreina"
+    },
+    "service": {
+      "hostname": "johnnyreina.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1615165191,
+  "expire_in": 157680000,
+  "prev": "358bef64adc4414c7746c53b4d08d2ef1db06c475b73bb278132ab7cf3130746",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUmtMFFcUXnYRZVueBSq1Gh1pI0pw7szszO7SaHmqpNTYJhVbZZk7c5cdHrPL
+7OwiIFQTKcGmvMIjRHymESyFNoZQqZaC1pYqPyBQKIFGRK2rSFpYSptioDO2/vJv
+7497c8/5vu9+59xTHaDT6H30d7vj3O2nA31uPYSazOSCtcUYtPOFmLkYy0FPD5TL
+I6dsyRF4zIzhAAcUz/K8gaAhD004hSBAyEqwPM1QiGAYwBmNys4jnAM4Q7I8gVtp
+ABDOkjxJWymOwVksBrMKYhaSHJIgyoosR7CUkeIBQVoJiuYhgwBu5FUSIqGJhAzN
+8iaEI4VosztVhmIOsk4UK9iVmHKx/Gvvefz/7Nv1VI7HEQDQwECcZjgCN/EMyZlM
+0EAj3GplgEkFOpEksnlIQWfbbaJYKCFBZLGSGExJuAUOqb1Vi3keFMvZ8xQFh2SX
+7Zw9V0naZNnhNKtkudChogsQtPynY4GCyCvdVBhuJDkFu4iZgYLkZEEVBjQwANoA
+TCAGQ4cdgoQsgoowMLQRV5b6DnIrkmSGwQiRlaZYnqMooBTMUDRnICHFK39BICvg
+lXI5ijFAhoSQYIyAJFjIcFYSkLiCxdTS8kU7ZmYUn2yWoukUskRWdkkIK9FXaElf
+jY9esz5ik++1T48PbZ5PmSgN/mTDswlcpVXHT6P3D34WwY4FLQNt6+aJDL++ip63
+bbBzVsbSR7oqm4ZevHm2sasiZB+s79VFt2o0S0+2ORLiFnWBy37zYYIuOrqsJShq
++UnD0ebF4us/o7gfCw7v8MDSwQW5c1deWsOFA3H9XnJEvuCeu+QfeuePr/CwdY2j
+pVsC64ye+F0JcxsXIxKDLamTR7Rrwu+xc6mvxE3GG8c0L1dNj093zd9P/7z8ysJr
+vbh/bead7KSdI7cmq8Wm2MchZe0TRX9dfyHgzeSd35TXmoiM5m8jZ4YS4t0wSLdU
+O307SPD4ppSZf528annQM/blcBg/sFzntz6sja8cbcpuerj6xsyV+vPhnZ3aqZql
+GtL+e0j6pr8X++oTvPkr9YlHHdbtC63eqrGOi68n5Z/8LqSdnv2tRd+hq7a5Rm1t
++7eTE1/P7H8ccy6L+Xh85kxGs+uR415v4hr9pVc3jrK3iZYN2+RfdvR0nJf6PWep
+5DdC6zJd5Ykpb81evFo60FBcfOT7vVnmzLXeJmnV1FaxtHqfsPry+54iJnKL/+XE
+Fe+x6GF96rs/HUzTXqudesc/p7L3Jd+B0w88J9I++3Mqqru3e8Y34ox0cGw4p+HQ
+ePAHnkdwbuu54XUluX39H+5OiqrtO7RbuhFwfPBUTajnrjcvck/dyp6eL/b233et
+3Mykigwj9SfTdYMfTVc1hje0zU9Z3vvhwKm2ln8A
+=v4v4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/johnnyreina
+
+==================================================================
