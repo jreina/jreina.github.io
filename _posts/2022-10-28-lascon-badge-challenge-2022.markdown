@@ -7,9 +7,12 @@ description: "OSINT and... blockchain hacking?"
 published: true
 ---
 
+## Preface
+It was noted during the official walkthrough that my technique for finding the target GitHub profile was not exactly how it was designed. I just wanted to point out that there's a good bit of the OSINT portion that I completely missed out on because I took a bit of a shortcut by abusing GitHub's commit linking feature.
+
 ## Entry point
 
-Like previous years' badge challenges, the entry point for this year's challenge was a QR code on the back of the badge. The badge game at LASCON originally started as a way to take up space on the back of the badge.
+Like previous years' badge challenges, the entry point for this year's challenge was a QR code on the back of the badge. The badge game at LASCON originally started as a way to take up space on the back of the badge but has turned into a sort of tradition and something that many people (myself included) look forward to each year.
 
 ![Image of back of badge](/public/lascon-badge-2022/badge.jpg)
 
@@ -28,7 +31,7 @@ LinkedIn: https://www.linkedin.com/in/lisa-alto-57079b24b/
 
 ### Phone number
 
-Searching for the phone number didn't turn up anything. Calling and texting did not produce anything of note either. The blurb of text reads:
+Searching for the phone number didn't turn up anything. Calling and texting did not produce anything of note either. 
 
 ### Summary
 
@@ -53,7 +56,7 @@ Going through the LinkedIn link, this user only has two posts. The first one is 
 
 ## 2. Finding the NFT
 
-I spent a lot of time looking for the NFT. I tried searching [PolyScan](https://mumbai.polygonscan.com/) for transactions and timestamps but came up empty. After racking my brain for a while, I thought about where a new blockchain developer would keep their (presumably exploitable) code. GitHub is generally the answer here. So I started looking for GitHub profiles for Lisa.
+I spent a lot of time looking for the NFT. I tried searching [PolyScan](https://mumbai.polygonscan.com/) for transactions and timestamps but came up empty. Additionally, I tried the main stenography tools on the profile image and background image from the vCard to no avail. After racking my brain for a while, I thought about where a new blockchain developer would keep their (presumably exploitable) code. GitHub is generally the answer here. So I started looking for GitHub profiles for Lisa.
 
 After spending hours trying different search criteria on Github and browsing pages of results, I took a break to get some food. While I was out, I realized I had completely ignored the email address from the vCard. I tried searching it directly on GitHub a few times with no results, when finally I thought about how commit linking on Github works. You can essentially commit code with any email address, then when you push the commit to a repo on Github, it will link the commit to the user with that email. I don't think this is a novel OSINT technique, but it has worked for me on a few occasions.
 
@@ -67,7 +70,7 @@ The user [@labradoodle-momma22 on Github](https://github.com/labradoodle-momma22
 
 So now we know the address of the NFT contract! Now, what the hell is an NFT contract?
 
-## 3. Exploiting a vulnerable smart contract
+## 3. Exploiting the vulnerable smart contract
 
 So now that I've watched the first 4 minutes of a 90-minute-long video about smart contracts, I feel as if I am an expert on the subject. My understanding is that a smart contract is a bit of stateful code which lives on a blockchain. And to interact with the code, you must send a transaction and pay _gas fees_. I was able to use the [Mumbai Faucet](https://mumbaifaucet.com/) to get some MATIC for gas fees.
 
