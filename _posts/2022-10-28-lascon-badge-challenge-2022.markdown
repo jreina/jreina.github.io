@@ -8,11 +8,12 @@ published: true
 ---
 
 ## Preface
+
 It was noted during the official walkthrough that my technique for finding the target GitHub profile was not exactly how it was designed. I just wanted to point out that there's a good bit of the OSINT portion that I completely missed out on because I took a bit of a shortcut by abusing GitHub's commit linking feature.
 
 ## Entry point
 
-Like previous years' badge challenges, the entry point for this year's challenge was a QR code on the back of the badge. The badge game at LASCON originally started as a way to take up space on the back of the badge but has turned into a sort of tradition and something that many people (myself included) look forward to each year.
+Like previous years' badge challenges, the entry point for this year's challenge was a QR code on the back of the badge. The badge game at [LASCON](https://lascon.org/) originally started as a way to take up space on the back of the badge but has turned into a sort of tradition and something that many people (myself included) look forward to each year.
 
 ![Image of back of badge](/public/lascon-badge-2022/badge.jpg)
 
@@ -24,14 +25,14 @@ Okay, so there's a phone number, an email address for the badge game, and a Link
 
 ```
 Name: Lisa Alto
-Phone number: (361) 236-7720
+Phone number: (███) ███-████ (redacted because it's not important 🙂)
 Email: lascon2022ctf@gmail.com
 LinkedIn: https://www.linkedin.com/in/lisa-alto-57079b24b/
 ```
 
 ### Phone number
 
-Searching for the phone number didn't turn up anything. Calling and texting did not produce anything of note either. 
+Searching for the phone number didn't turn up anything. Calling and texting did not produce anything of note either.
 
 ### Summary
 
@@ -140,4 +141,8 @@ And here we are on the board! noodlesec FTW!
 
 This was a super fun badge game. It forced me out of my element with the NFT and smart contract portion and also forced me to learn a couple of things. Blockchain development hasn't been high up on my radar and I honestly don't know that I will do more in the future, but I'm glad to have had some exposure. (\*adds blockchain expert to my resume\*)
 
-This is one of the best parts of LASCON and why I will travel 5-6 hours to attend. Not necessarily the badge game itself, but the amount of exposure to new ways of thinking and raw expertise that comes with a conference like this is rad. See y'all next year!
+This is one of the best parts of [LASCON](https://lascon.org/) and why I will travel 5-6 hours to attend. Not necessarily the badge game itself, but the amount of exposure to new ways of thinking and raw expertise that comes with a conference like this is rad. See y'all next year!
+
+## About LASCON
+
+[LASCON](https://lascon.org/) is an [OWASP](https://owasp.org/)-associated conference held annually in Austin, TX.
