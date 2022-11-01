@@ -61,7 +61,7 @@ I spent a lot of time looking for the NFT. I tried searching [PolyScan](https://
 
 After spending hours trying different search criteria on Github and browsing pages of results, I took a break to get some food. While I was out, I realized I had completely ignored the email address from the vCard. I tried searching it directly on GitHub a few times with no results, when finally I thought about how commit linking on Github works. You can essentially commit code with any email address, then when you push the commit to a repo on Github, it will link the commit to the user with that email. I don't think this is a novel OSINT technique, but it has worked for me on a few occasions.
 
-So I quickly created a new GitHub repo, changed the email in the username to `lascon2022ctf@gmail.com`, and pushed the commit to my new repo. **BOOM** that's it! I go look at Github, and sure enough, it's linked the commit to an existing user with a profile image matching the vCard:
+So I quickly created a new GitHub repo, changed the email in the username to `lascon2022ctf@gmail.com`, and pushed the commit to my new repo. **BOOM** that's it! I go look at Github, and sure enough, it's [linked the commit](https://github.com/jreina/lascon-ctf-seeing-stuff/commit/57fb27130aa3dd34609e13d463af65a796d4e8e8) to an existing user with a profile image matching the vCard:
 
 ![screenshot of a commit with lisa's github profile linked](/public/lascon-badge-2022/lascon-2022-4.png)
 
