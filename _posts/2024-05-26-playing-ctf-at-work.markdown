@@ -9,7 +9,7 @@ published: true
 
 ## Preface
 
-During our first ever EPDS (engineering, product, design, and security) offsite at [SafeBase](https://safebase.io), a CTF was organized to promote team building and to encourage generally random groups of people to work together towards a common goal. Every CTF team consisted of at least one member of each EPDS group and usually in configurations that we are not accustomed to in our day to day work.
+During our first ever EPDS (engineering, product, design, and security) offsite at SafeBase, a CTF was organized to promote team building and to encourage generally random groups of people to work together towards a common goal. Every CTF team consisted of at least one member of each EPDS group and usually in configurations that we are not accustomed to in our day to day work.
 
 ## Entry point
 
@@ -27,7 +27,7 @@ Team captains should help guide where necessary, find floating pairings of playe
 
 We were allocated about 4 hours to work on it during the main itinerary, but many player's competitive and hacking spirit was in overdrive after to the main event. I believe we ended up in a 4-way tie at the end of the session, with some players discussing the remaining challenges over dinner and into the next day.  
 
-As any CTF player knows, when the clock is ticking it is difficult to think about anything else. So after the day's (and night's) activities I chose to settle into my hotel room with a couple drinks and some music and continue working on the open challenges. Working by myself I managed to solve 2 of the challenges, with one of them being a really fun exploit chain (reflected XSS -> CSP -> unsanitized input). At the end of the second day, I paired up with [another player from a different team](https://patrickt.one/about/) to work through the 2 remaining problems. This session proved to be quite fruitful as they mentioned that we have access to a [PwnBox on HTB](https://help.hackthebox.com/en/articles/5185608-introduction-to-pwnbox)! Once we had access to the PwnBox, we solved the most nagging challenge in about 20-30 minutes. The final challenge was a straightforward OSINT challenge with a single pivot.
+As any CTF player knows, when the clock is ticking it is difficult to think about anything else. So after the day's (and night's) activities I chose to settle into my hotel room with a couple drinks and some music and continue working on the open challenges. Working by myself I managed to solve 2 of the challenges, with one of them being a really fun exploit chain (unsanitized input -> reflected XSS -> CSP -> canary). At the end of the second day, I paired up with [another player from a different team](https://patrickt.one/about/) to work through the 2 remaining problems. This session proved to be quite fruitful as they mentioned that we have access to a [PwnBox on HTB](https://help.hackthebox.com/en/articles/5185608-introduction-to-pwnbox)! Once we had access to the PwnBox, we solved the most nagging challenge in about 20-30 minutes. The final challenge was a straightforward OSINT challenge with a single pivot.
 
 ## Conclusion
 
