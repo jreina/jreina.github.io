@@ -22,7 +22,7 @@ url: "https://johnnyreina.com" # the base hostname & protocol for your site, e.g
 twitter_username: johnny_reina
 github_username:  jreina
 name: Johnny Reina on Github Pages
-google_analytics: UA-107281616-1
+google_analytics: G-GC63K03LDW
 
 # Build settings
 markdown: kramdown
